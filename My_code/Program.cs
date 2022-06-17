@@ -7,16 +7,15 @@ string [] Array = {"Bravo", "No", "8", "Master",
  
 Console.WriteLine();
 
-void Print_Arr (string [] My)
-{
-    for (int i = 0; i < My.Length; i++)
-    {
-        Console.Write(My[i] + " ");
-        
-    }
-    
-    
-}
+void Print_Arr (string [] My)              
+{                                           
+ for (int i = 0; i < My.Length; i++)
+    {                                        // Можно добавить проверку:
+        Console.Write(My[i] + " ");         // if (My.Length == 0)
+                                              // Console.Write("[]");
+    }                                       // else
+}                                             // Console.Write(My[i] + " ");
+                                               
 Print_Arr(Array);
 
 
